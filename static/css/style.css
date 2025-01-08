@@ -1,0 +1,57 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    position: relative;
+    margin: 20px auto;
+    width: 640px;
+    height: 480px;
+}
+
+video, canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+video {
+    z-index: 1;
+}
+
+canvas {
+    z-index: 2;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#status {
+    color: #ff0000;
+    margin-top: 10px;
+}
