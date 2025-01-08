@@ -1,0 +1,5 @@
+flask
+numpy
+opencv-python
+tensorflow
+Pillow==8.3.2
