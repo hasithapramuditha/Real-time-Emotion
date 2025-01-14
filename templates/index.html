@@ -9,38 +9,14 @@
 <body>
     <div class="container">
         <h1>Real-time Emotion Detection</h1>
-        
-        <!-- Webcam Section -->
-        <div class="section">
-            <h2>Webcam Detection</h2>
-            <div class="video-container">
-                <video id="video" width="640" height="480" autoplay></video>
-                <canvas id="canvas" width="640" height="480"></canvas>
-            </div>
-            <div class="controls">
-                <button id="startButton">Start Detection</button>
-                <button id="stopButton" disabled>Stop Detection</button>
-            </div>
+        <div class="video-container">
+            <video id="video" width="640" height="480" autoplay></video>
+            <canvas id="canvas" width="640" height="480"></canvas>
         </div>
-
-        <!-- Video Upload Section -->
-        <div class="section">
-            <h2>Video File Detection</h2>
-            <div class="upload-container">
-                <form id="videoUploadForm" enctype="multipart/form-data">
-                    <input type="file" id="videoFile" name="video" accept=".mp4,.avi,.mov">
-                    <button type="submit">Upload & Process</button>
-                </form>
-                <div id="uploadStatus"></div>
-            </div>
-            <div class="video-result" style="display: none;">
-                <h3>Processed Video</h3>
-                <video id="processedVideo" width="640" height="480" controls>
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+        <div class="controls">
+            <button id="startButton">Start Detection</button>
+            <button id="stopButton" disabled>Stop Detection</button>
         </div>
-
         <div id="status"></div>
     </div>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
